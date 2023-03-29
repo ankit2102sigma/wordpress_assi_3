@@ -1,0 +1,26 @@
+/*
+Theme Name: Consulting Child
+Theme URI: https://www.thinkupthemes.com/free/consulting-free/
+Template: consulting
+Author: ThinkUpThemes
+Author URI: https://www.thinkupthemes.com
+Description: Consulting is the free version of the multi-purpose professional theme (Consulting Pro) ideal for a business or blog website. The theme has a responsive layout, HD retina ready and comes with a powerful theme options panel with can be used to make awesome changes without touching any code. The theme also comes with a full width easy to use slider. Easily add a logo to your site and create a beautiful homepage using the built-in homepage layout.
+Tags: one-column,two-columns,three-columns,right-sidebar,left-sidebar,custom-header,custom-menu,full-width-template,theme-options,threaded-comments,featured-images,post-formats,sticky-post,translation-ready,flexible-header,custom-background,grid-layout,footer-widgets,blog,e-commerce,photography
+Version: 1.3.1.1680002763
+Updated: 2023-03-28 11:26:03
+
+*/
+.slider-full #header-core {
+    max-width: 1470px;
+}
+
+.ast-page-builder-template .entry-content[ast-blocks-layout] > *, .ast-page-builder-template .entry-content[ast-blocks-layout] {
+    max-width: fit-content;
+}
+@media (min-width: 993px){
+    .ast-separate-container #primary, .ast-separate-container.ast-left-sidebar #primary, .ast-separate-container.ast-right-sidebar #primary {
+        /* margin: 4em 0; */
+        padding: 0;
+    }
+}
+

@@ -1,4 +1,10 @@
-function my_scripts() {
-    wp_enqueue_script('testimonial-slider', get_template_directory_uri() . '/js/testimonial-slider.js', array('jquery'), '1.0', true);
-}
-add_action('wp_enqueue_scripts', 'my_scripts');
+jQuery(document).ready(function($) {
+    var slideIndex = 0;
+    var slides = $('.testimonial-slide');
+    slides.eq(0).addClass('active');
+    setInterval(function() {
+        slides.removeClass('active');
+        slideIndex = (slideIndex + 1) % slides.length;
+        slides.eq(slideIndex).addClass('active');
+    }, 5000);
+});

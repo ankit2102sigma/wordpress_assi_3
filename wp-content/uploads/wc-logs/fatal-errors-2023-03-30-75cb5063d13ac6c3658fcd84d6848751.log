@@ -1,0 +1,4 @@
+2023-03-30T10:01:24+00:00 CRITICAL syntax error, unexpected '$', expecting variable (T_VARIABLE) in /var/www/html/wordpress3/wp-content/themes/astra-child/functions.php on line 106
+
+2023-03-30T10:03:24+00:00 CRITICAL syntax error, unexpected end of file in /var/www/html/wordpress3/wp-content/themes/astra-child/functions.php on line 116
+

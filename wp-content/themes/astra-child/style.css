@@ -30,3 +30,53 @@ Updated: 2023-03-28 12:03:40
     margin: 10px;
     margin-top: 25px;
 }
+.testimonial-slider {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.testimonial-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.testimonial-slide.active {
+    opacity: 1;
+}
+blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+cite {
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 20px;
+}
+#foogallery-gallery-170 .fg-image {
+    width: 150px;
+    max-height: 200px;
+}
+
+#foogallery-gallery-178 .fg-image {
+    width: 150px;
+    max-height: 80px;
+}
+
+#foogallery-gallery-185 .fg-image {
+    width: 150px;
+    max-height: 87px;
+}
+.ast-single-post .entry-content a, .ast-comment-content a:not(.ast-comment-edit-reply-wrap a) {
+    text-decoration: underline;
+    COLOR: WHITE;
+}
+

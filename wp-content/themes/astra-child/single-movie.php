@@ -6,23 +6,23 @@
         <h1 class="page-title">
             <?php single_term_title(); ?>
         </h1>
-    </header><!-- .page-header -->
+    </header>
 
-    <?php if ( have_posts() ) : ?>
+    <?php if (have_posts()) : ?>
 
         <div class="movie-list">
 
-            <?php while ( have_posts() ) : the_post(); ?>
+            <?php while (have_posts()) : the_post(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <?php if ( has_post_thumbnail() ) : ?>
+                    <?php if (has_post_thumbnail()) : ?>
                         <div class="entry-thumbnail">
-                            <?php the_post_thumbnail( 'thumbnail' ); ?>
+                            <?php the_post_thumbnail('thumbnail'); ?>
                         </div><!-- .entry-thumbnail -->
                     <?php endif; ?>
 
                     <header class="entry-header">
-                        <?php the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+                        <?php the_title('<h2 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>'); ?>
                     </header><!-- .entry-header -->
 
                     <div class="entry-summary">
@@ -35,19 +35,19 @@
         </div><!-- .movie-list -->
 
         <?php
-// Pagination
-        the_posts_pagination( array(
-            'prev_text' => __( 'Previous page', 'textdomain' ),
-            'next_text' => __( 'Next page', 'textdomain' ),
-        ) );
+
+        the_posts_pagination(array(
+            'prev_text' => __('Previous page', 'textdomain'),
+            'next_text' => __('Next page', 'textdomain'),
+        ));
         ?>
 
     <?php else : ?>
 
-        <p><?php esc_html_e( 'No movies found', 'textdomain' ); ?></p>
+        <p><?php esc_html_e('No movies found', 'textdomain'); ?></p>
 
     <?php endif; ?>
 
-</main><!-- #main -->
+</main>
 
 <?php get_footer(); ?>

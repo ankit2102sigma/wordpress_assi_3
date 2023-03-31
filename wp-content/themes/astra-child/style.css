@@ -80,3 +80,13 @@ cite {
     COLOR: WHITE;
 }
 
+blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    background: lightgrey;
+    margin: 0;
+    padding: 23px 20px;
+    text-align: center;
+}
+
